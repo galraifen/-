@@ -74,16 +74,14 @@
             android:layout_height="wrap_content"
             android:text="@string/op3" />
 
-        <EditText
-            android:id="@+id/Line"
+        <View
+            android:id="@+id/view1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="240dp"
-            android:layout_marginLeft="20dp"
-            android:ems="0"
-            android:inputType="textPersonName" />
+            android:layout_height="5dp"
+            android:layout_marginTop="18dp"
+            android:background="@android:color/darker_gray"/>
     </LinearLayout>
-    <LinearLayout
+    <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -103,5 +101,5 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/alt2" />
-    </LinearLayout>
+    </RadioGroup>
 </RelativeLayout>
