@@ -32,7 +32,7 @@
 
         <EditText
             android:id="@+id/enterName"
-            android:layout_width="120dp"
+            android:layout_width="121dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:ems="10"
