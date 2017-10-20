@@ -3,18 +3,18 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/Intro"
+        android:id="@+id/tvIntro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/intro_text"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
+        android:layout_marginRight="20dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="100dp"
         android:layout_marginBottom="320dp"
         android:orientation="horizontal"
         android:layout_below="@+id/Intro"
@@ -23,15 +23,15 @@
 
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/tvName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="wrap_content"
+
             android:text="@string/name_text"
             />
 
         <EditText
-            android:id="@+id/enterName"
+            android:id="@+id/edEnterName"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -39,7 +39,7 @@
             android:inputType="textPersonName" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/nameButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
@@ -52,54 +52,56 @@
         android:orientation="vertical"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="190dp"
-        android:layout_marginBottom="120dp">
+        android:layout_marginTop="190dp">
 
         <CheckBox
-            android:id="@+id/checkBox4"
+            android:id="@+id/option1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="@string/op1" />
 
         <CheckBox
-            android:id="@+id/checkBox5"
+            android:id="@+id/option2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/op2" />
 
         <CheckBox
-            android:id="@+id/checkBox6"
+            android:id="@+id/option3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/op3" />
 
         <View
-            android:id="@+id/view1"
-            android:layout_width="match_parent"
+            android:id="@+id/vSeparateLine"
+            android:layout_width="100dp"
             android:layout_height="5dp"
             android:layout_marginTop="18dp"
-            android:background="@android:color/darker_gray"/>
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/darker_gray" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop = "50dp"
+            android:orientation="vertical">
+
+
+            <RadioButton
+                android:id="@+id/rbAlternative1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/alt1" />
+
+            <RadioButton
+                android:id="@+id/rbAlternative2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/alt2" />
+        </RadioGroup>
+
     </LinearLayout>
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="350dp">
-
-
-        <RadioButton
-            android:id="@+id/alternative1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/alt1" />
-
-        <RadioButton
-            android:id="@+id/alternative2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/alt2" />
-    </RadioGroup>
 </RelativeLayout>
