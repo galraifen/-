@@ -17,7 +17,6 @@
         android:layout_marginTop="100dp"
         android:layout_marginBottom="320dp"
         android:orientation="horizontal"
-        android:layout_below="@+id/Intro"
         android:layout_alignParentStart="true"
         android:id="@+id/linearLayout">
 

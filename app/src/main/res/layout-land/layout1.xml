@@ -12,12 +12,12 @@
         android:layout_marginRight="20dp" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="320dp"
         android:orientation="horizontal"
-        android:layout_below="@+id/Intro"
+        android:layout_below="@+id/tvIntro"
         android:layout_alignParentStart="true"
         android:id="@+id/linearLayout">
 
@@ -26,13 +26,13 @@
             android:id="@+id/tvName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:layout_marginLeft="20dp"
             android:text="@string/name_text"
             />
 
         <EditText
             android:id="@+id/edEnterName"
-            android:layout_width="120dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:ems="10"
@@ -52,7 +52,9 @@
         android:orientation="vertical"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="190dp">
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="400dp"
+        android:id="@+id/LLcheckBoxes">
 
         <CheckBox
             android:id="@+id/option1"
@@ -72,21 +74,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/op3" />
-
+</LinearLayout>
         <View
             android:id="@+id/vSeparateLine"
-            android:layout_width="100dp"
-            android:layout_height="5dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginLeft="20dp"
+            android:layout_width="5dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/radio"
+            android:layout_alignTop="@+id/LLcheckBoxes"
+            android:layout_below="@+id/linearLayout"
             android:background="@android:color/darker_gray" />
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop = "50dp"
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/radio"
+    android:orientation="vertical"
+    android:layout_alignTop="@+id/LLcheckBoxes"
+    android:layout_alignEnd="@+id/linearLayout"
+    android:layout_marginEnd="83dp">
+    <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/linearLayout"
+            android:layout_alignRight="@+id/vSeparateLine"
+            android:layout_marginTop = "20dp"
+            android:layout_marginLeft="40dp"
             android:orientation="vertical">
 
 
@@ -96,12 +107,12 @@
                 android:layout_height="wrap_content"
                 android:text="@string/alt1" />
 
-            <RadioButton
-                android:id="@+id/rbAlternative2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/alt2" />
-        </RadioGroup>
+        <RadioButton
+            android:id="@+id/rbAlternative2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alt2" />
+    </RadioGroup>
 
     </LinearLayout>
 </RelativeLayout>
