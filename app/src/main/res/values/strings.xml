@@ -8,4 +8,5 @@
     <string name="op3">Option3</string>
     <string name="alt1">alternative1</string>
     <string name="alt2">alternative2</string>
+    <string name="lay2Intro">This activity demonstrates the use of Grid layout with embedded image views</string>
 </resources>

@@ -1,17 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true">
-    <ImageView
-        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/gridLayout">
 
-        android:layout_width="wrap_content"
-        android:src="@drawable/cat"/>
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/turtle"
+            android:layout_row="0"
+            android:background="@drawable/round_edges"
 
+             />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_row="0"
+            app:srcCompat="@drawable/twitter"
+            android:background="@drawable/round_edges"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:background="@drawable/round_edges"
+            app:srcCompat="@drawable/cat" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            app:srcCompat="@drawable/pidgin"
+            android:background="@drawable/round_edges"/>
     </GridLayout>
-    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lay2Intro"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>
